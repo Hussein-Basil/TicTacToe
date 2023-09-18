@@ -101,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         board.forEach { buttonsRow ->
             buttonsRow.forEach { button ->
                 button.setOnClickListener {
-                    // find 2D coordinates from 1D index
                     if (button.text == "" && result == null) {
                         playMove(button, currentPlayer)
 
